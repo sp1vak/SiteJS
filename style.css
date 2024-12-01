@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calc {
+    background-color:aliceblue;
+    color:black;
+    font-family: Arial;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 5%;
+    box-shadow: 4px 4px 2px gray;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.text {    
+    height: 125px;
+    /*background-color: rgb(91, 89, 89);*/
+    border-radius: 25px;
+    display: grid;
+    justify-content: end;
+    align-items: end;  
+    padding: 10px;
+    margin-bottom: 20px;  
+    
+    overflow: hidden;
+}
+
+.text p{
+    text-align: right;
+    font-size: 4em;
+    margin: 0;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eigth nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero comma equal";
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    line-height: 20px;
+    border-top: 2px solid orange;
+    border-radius: 20px;
+    padding-top: 7px;
+}
+
+.btn {    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20pt;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    transition: opacity 0.5s ease;
+    background-color: rgb(214, 213, 213);
+	box-shadow: 7px 5px 30px -7px #a1a1a1;
+}
+
+.btn:active{
+    transition: opacity 1s ease;
+    transform: scale(0.97);
+	background: rgb(163, 162, 162);
+ 	box-shadow: 7px 7px 15px -1px rgb(163, 162, 162);
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+.bg-orange {
+    font-weight:600;
+    color: orange;
+}
+
+.bg-orange:active {
+    background-color: rgb(255, 227, 175);
+    color: orange;
+ 	box-shadow: 7px 5px 15px 1px rgb(255, 227, 175);
+}
